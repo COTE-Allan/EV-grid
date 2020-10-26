@@ -1,0 +1,165 @@
+/*====================*/
+/*======| INIT |======*/
+/*====================*/
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(../img/mars-mission.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Strait", sans-serif;
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Strait&display=swap");
+
+/*====================*/
+/*======| GRID |======*/
+/*====================*/
+
+.grid-container {
+  align-self: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 70% 1fr;
+  gap: 0px 0px;
+  height: 50vh;
+  width: 50vw;
+  grid-template-areas:
+    "curiosity curiosity meteo meteo"
+    "image1 image2 image3 image4";
+}
+
+.curiosity {
+  grid-area: curiosity;
+  background-image: url(../img/rover.jpg);
+}
+
+.meteo {
+  grid-area: meteo;
+  background-color: rgba(49, 49, 49, 0.356);
+}
+
+.image1 {
+  grid-area: image1;
+  background-image: url(../img/vue-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image2 {
+  grid-area: image2;
+  background-image: url(../img/vue-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image3 {
+  grid-area: image3;
+  background-image: url(../img/vue-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image4 {
+  grid-area: image4;
+  background-image: url(../img/vue-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*====================*/
+/*======| FLEX |======*/
+/*====================*/
+
+/*======| Flex Grid |======*/
+.flex-footer {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*======| Flex Main |======*/
+.flex-main {
+  display: flex;
+  align-items: center;
+}
+
+/*======| Element Flex Main |======*/
+.titre {
+  flex: 0.9 1;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.titre h1 {
+  margin-left: 150px;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+}
+.titre a {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(150, 150, 150, 1);
+  text-decoration: none;
+  font-size: 24px;
+  align-self: flex-end;
+}
+.titre a:hover {
+  text-decoration: underline;
+}
+
+/*======| Flex Header |======*/
+.flex-header {
+  display: flex;
+  margin: 0;
+}
+
+/*======| Element Flex Header |======*/
+.image {
+  flex: 1 1;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.image img {
+  width: 143.43px;
+  height: 40px;
+}
+.vide {
+  flex: 1 1;
+}
+.liens {
+  flex: 3 1;
+  padding-right: 150px;
+  padding-top: 110px;
+}
+.liens a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 5px;
+}
+.liens a:hover {
+  text-decoration: underline;
+}
+
+/*======| Flex Meteo |======*/
+.flex-meteo {
+  display: flex;
+  flex-direction: column;
+}
+
+.meteojour {
+  display: flex;
+}
+.meteojour .item {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.stats {
+  display: flex;
+}
